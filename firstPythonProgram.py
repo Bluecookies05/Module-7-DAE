@@ -113,3 +113,34 @@ def main():
             print( line )
             line = testFile.readline().rstrip("/n")
         expect Exception as potentialError:
+
+
+
+
+def main():
+    testFile = open( "testFile.txt", "w" )
+
+    testFile.write( str( 2 ) + "\n" )
+    testFile.write( str( 4 ) + "\n" )
+    testFile.write( str( 6 ) + "\n" )
+    testFile.write( str( 8 ) + "\n" )
+
+def main ():
+    testFile = open ( "testFile.txt", "r" )
+
+    line = testFile.readline()
+    line = line.rstrip("\n")
+
+    while line !="":
+        print( line )
+        line = testFile.readline().rstrip("\n")
+
+        testFile.close()
+
+main()
+
+from multiprocessing.sharedctypes import Value 
+
+def main():
+    try:
+        testFile = open( "testFile.txt", "r" )
