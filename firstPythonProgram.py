@@ -103,21 +103,6 @@ print ( superAdvanceDifference )
 from multiprocessing.sharedctypes import Value 
 
 def main():
-    try:
-        testFiles = open( "testFile.txt", "r" )
-
-        line = testFile.readline()
-        line = line.rstrip("/n")
-
-        while line !="":
-            print( line )
-            line = testFile.readline().rstrip("/n")
-        expect Exception as potentialError:
-
-
-
-
-def main():
     testFile = open( "testFile.txt", "w" )
 
     testFile.write( str( 2 ) + "\n" )
@@ -144,3 +129,19 @@ from multiprocessing.sharedctypes import Value
 def main():
     try:
         testFile = open( "testFile.txt", "r" )
+
+        line = testFile.readline()
+        line = line.rstrip ("\n")
+
+        while line !="":
+            print ( line )
+            line = testFile.readline().rstrip("\n")
+    expect Exception as potential Error:
+        print ( potentialError )
+    else:
+        print( "All system functioning" )
+    finally:
+        testFile.close()
+        print( "End the program" )
+    
+main()
